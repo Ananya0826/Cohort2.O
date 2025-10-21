@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+#nav {
+    position: sticky;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(99, 97, 97);
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    align-items: center;
+    font-size: 8px;
+}
+
+h4 {
+    color: white;
+    font-weight: 100;
+}
+
+#center {
+    background-color: black;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_small.jpg);
+    background-size: cover;
+    background-position:center;
+}
+
+#center h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#center h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#links button {
+    
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-size: 8px;
+}
+#btn1{
+    background-color: #0071e3;
+    color: white;
+    border: none;
+}
+#btn2{
+    background-color: transparent;
+    color: #0071e3;
+    font-weight: 600;
+    border: 1px solid #0071e3;
+}
+#main2{
+    height: 100%;
+    width: 100%;
+}
+#mid{
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(211, 202, 202);
+    background-image: url(hero_iphone_air__0gxyavihpiqu_small.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#mid h1{
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+}
+#mid p{
+    font-size: 15px;
+    font-weight: 100;
+}
+#mid2{
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url(hero_iphone_17__c5vvimu9a20y_small.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#mid2 h4{
+    color: black;
+}
+#grid1{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+}
+.first{
+    background-image: url(Watch.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 48%;
+    text-align: center;
+}
+.first img{
+    margin-left: 10px;
+    margin-top: 30px;
+    height: 22px;
+}
+.first h4{
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+}
+.second{
+    background-image: url(Airpods.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 48%;
+    height: 100%;
+    text-align: center;
+}
+.second h3{
+    margin-top: 30px;
+}
+.second h4{
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+}
+#grid2{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+} 
+.third{
+    background-image: url(promo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 48%;
+    text-align: center;
+}
+.third h3{
+    margin-top: 200px;
+    color: white;
+}
+.third h4{
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+.fourth{
+    background-image: url(Laptop.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 48%;
+    height: 100%;
+    text-align: center;
+}
+.fourth h3{
+    margin-top: 30px;
+}
+.fourth h4{
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+}
+ #grid3{
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+}
+.fifth{
+    background-image: url(promo_iphone_tradein__bugw15ka691e_medium.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 48%;
+    text-align: center;
+}
+.fifth img{
+    margin-left: 14px;
+    margin-top: 30px;
+    height: 22px;
+}
+.fifth h4{
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+}
+.sixth{
+    background-image: url(card.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 48%;
+    height: 100%;
+    text-align: center;
+}
+.sixth img{
+    margin-left: 14px;
+    margin-top: 30px;
+    height: 22px;
+}
+.sixth h4{
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+}
+#glinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0px;
+    padding: 10px;
+}
+
+#glinks button {
+    padding: 5px 8px;
+    margin: 5px;
+    border-radius: 50px;
+    font-size: 8px;
+}
+#gbtn1{
+    background-color: #0071e3;
+    color: white;
+    border: none;
+}
+#gbtn2{
+    background-color: transparent;
+    color: #0071e3;
+    font-weight: 600;
+    border: 1px solid #0071e3;
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "helvetica now display";
+}
+html,body{
+    height:100%;
+    width:100%;
+} 
+#main{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    padding: 9px 30px;
+}
+#nav a{
+    color: black;
+    font-size: 10px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+#main > h1{
+    position: absolute;
+    left: 15%;
+    font-size: 120px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+#btmleft{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    width: 100px;
+}
+#btmleft h3{
+    font-size: 10px;
+}
+#btmleft p{
+    font-size: 8px;
+    margin-top: 2px;
+}
+#btmleft h4{
+    font-size: 10px;
+    margin-top: 10px;
+}
+#btmbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 40px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    font-size: 9px;
+}
+#btmbar a{
+    text-decoration: none;
+    color: black;
+}
+#main > img{
+    position: absolute;
+    height: 130px;
+    opacity: 90%;
+}
+#first{
+    top: 35%;
+    left: 59%;
+}
+#main #second{
+    height:120px;
+    top: 55%;
+    left: 50%;
+}
+#main #third{
+    height: 120px;
+    top: 43%;
+    left:40%;
+}
