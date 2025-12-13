@@ -9,3 +9,121 @@ html,body{
     background-color: black;
     color: white;
 }
+body{
+    color: white;
+    background-color:black;
+}
+main{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right bottom,rgb(26,26,26),rgb(35,35,35),black);
+    overflow: auto;
+  }
+  section{
+    height: 100%;
+    width:220px;
+    background-color: black;
+    border-radius: 10px;
+    margin: auto;
+    /* overflow: auto; */
+  }
+  .all-reels{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+  .reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: lightseagreen;
+    overflow: hidden;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  .all-reels::-webkit-scrollbar{
+    display: none;
+  }
+  .reel video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+  }
+  .reel .bottom{
+    padding: 15px 10px;
+    width: 100%;
+    /* height: 10%; */
+    background: linear-gradient(rgba(0,0,0,0),rgba(0, 0, 0, 0.844));
+    position: absolute;
+    bottom: 0;
+  }
+  .bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  .bottom .user img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .bottom .user h4{
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .bottom .user button{
+    background-color: transparent;
+    color: white;
+    padding: 1px 3px;
+    font-size: 10px;
+    font-weight: 200;
+    border-radius: 2px;
+    border: 1px solid white;
+  }
+  .bottom>h3{
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .right{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    /* height: 100%; */
+    align-items: center;
+    text-align: center;
+    width:40px;
+    position: absolute;
+    right: 0;
+    /* background: linear-gradient(to right,transparent,rgba(0,0,0,0.284)); */
+    bottom: 10%;
+    border-radius: 50%;
+  }
+  .right i{
+    font-size: 17px;
+    font-weight: 100;
+  }
+  .right h4{
+    cursor: pointer;
+  }
+  .right h6{
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .right>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .love{
+    color: red;
+  }
