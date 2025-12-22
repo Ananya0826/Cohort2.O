@@ -13,6 +13,26 @@ body{
     color: white;
     background-color:black;
 }
+.mute{
+  background-color: #333;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  position:absolute;
+  top:7px;
+  right: 7px;
+}
+.mute i{
+  font-size: 12px;
+  pointer-events: none;
+}
+.mute:active{
+  scale: 0.95;
+}
 main{
     height: 100%;
     width: 100%;
@@ -119,11 +139,21 @@ main{
     font-weight: 300;
   }
   .right>div{
+    width: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .right>div h4{
+    pointer-events:none;
+  }
+  .right>div h6{
+    pointer-events:none;
+  }
   .love{
     color: red;
+  }
+  .like{
+
   }

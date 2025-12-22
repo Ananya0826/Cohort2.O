@@ -1,5 +1,6 @@
 const reels = [
   {
+    ismuted:true,
     username: "ananya_01",
     userprofileimg: "https://i.pravatar.cc/150?img=1",
     likecount: 1200,
@@ -12,6 +13,7 @@ const reels = [
     video: "./reels/1.mp4"
   },
   {
+    ismuted:true,
     username: "coder_life",
     userprofileimg: "https://i.pravatar.cc/150?img=2",
     likecount: 980,
@@ -24,6 +26,7 @@ const reels = [
     video: "./reels/2.mp4"
   },
   {
+    ismuted:true,
     username: "travel_diaries",
     userprofileimg: "https://i.pravatar.cc/150?img=3",
     likecount: 3420,
@@ -36,6 +39,7 @@ const reels = [
     video: "./reels/3.mp4"
   },
   {
+    ismuted:true,
     username: "foodie_zone",
     userprofileimg: "https://i.pravatar.cc/150?img=4",
     likecount: 1560,
@@ -48,6 +52,7 @@ const reels = [
     video: "./reels/4.mp4"
   },
   {
+    ismuted:true,
     username: "fitness_guru",
     userprofileimg: "https://i.pravatar.cc/150?img=5",
     likecount: 2210,
@@ -60,6 +65,7 @@ const reels = [
     video: "./reels/5.mp4"
   },
   {
+    ismuted:true,
     username: "music_addict",
     userprofileimg: "https://i.pravatar.cc/150?img=6",
     likecount: 1875,
@@ -72,6 +78,7 @@ const reels = [
     video: "./reels/1.mp4"
   },
   {
+    ismuted:true,
     username: "artistic_soul",
     userprofileimg: "https://i.pravatar.cc/150?img=7",
     likecount: 2640,
@@ -84,6 +91,7 @@ const reels = [
     video: "./reels/2.mp4"
   },
   {
+    ismuted:true,
     username: "nature_clicks",
     userprofileimg: "https://i.pravatar.cc/150?img=8",
     likecount: 3090,
@@ -96,6 +104,7 @@ const reels = [
     video: "./reels/3.mp4"
   },
   {
+    ismuted:true,
     username: "tech_updates",
     userprofileimg: "https://i.pravatar.cc/150?img=9",
     likecount: 890,
@@ -108,6 +117,7 @@ const reels = [
     video: "./reels/4.mp4"
   },
   {
+    ismuted:true,
     username: "daily_quotes",
     userprofileimg: "https://i.pravatar.cc/150?img=10",
     likecount: 4100,
@@ -120,23 +130,27 @@ const reels = [
     video: "./reels/5.mp4"
   }
 ];
-
-var sum='';
-reels.forEach(function(elem){
-    sum=sum+`
+var allreels = document.querySelector('.all-reels');
+function addData() {
+  var sum = '';
+  reels.forEach(function (elem, idx) {
+    sum = sum + `
                 <div class="reel">
-                    <video autoplay loop muted src=${elem.video}></video>
+                    <video autoplay loop ${elem.ismuted?'muted':''} src=${elem.video}></video>
+                    <div  class="mute" id=${idx}>
+                    ${elem.ismuted?'<i class="ri-volume-mute-fill"></i>':'<i class="ri-volume-up-fill"></i>'}
+                    </div>
                     <div class="bottom">
                         <div class="user">
                             <img src="${elem.userprofileimg}" alt="">
                             <h4>${elem.username}</h4>
-                            <button>${elem.isfollowed?'Unfollow':'Follow'}</button>
+                            <button id=${idx} class='follow'>${elem.isfollowed ? 'Unfollow' : 'Follow'}</button>
                         </div>
                         <h3>${elem.caption}</h3>
                     </div>
                     <div class="right">
-                        <div class="like">
-                            <h4 class="like-icon icon">${elem.isliked?'<i class="ri-heart-3-fill love"></i>':'<i class="ri-heart-3-line"></i>'}</h4>
+                        <div id=${idx} class="like">
+                            <h4 class="like-icon icon">${elem.isliked ? '<i class="ri-heart-3-fill love"></i>' : '<i class="ri-heart-3-line"></i>'}</h4>
                             <h6>${elem.likecount}</h6>
                         </div>
                         <div class="comment">
@@ -153,6 +167,40 @@ reels.forEach(function(elem){
                         </div>
                     </div>
                 </div>`;
+  })
+  allreels.innerHTML = sum;
+}
+addData();
+//target tell on what element have yo clicked.
+allreels.addEventListener('click', function (dets) {
+  if(dets.target.className=='like'){
+    if(!reels[dets.target.id].isliked){
+      reels[dets.target.id].likecount++;
+      reels[dets.target.id].isliked=true;
+    }
+    else{
+      reels[dets.target.id].likecount--;
+      reels[dets.target.id].isliked=false;
+    }
+     addData();
+  }
+  if(dets.target.className=='follow'){
+    if(!reels[dets.target.id].isfollowed){
+      reels[dets.target.id].isfollowed=true;
+    }
+    else{
+      reels[dets.target.id].isfollowed=false;
+    }
+     addData();
+  } 
+
+  if(dets.target.className=='mute'){
+    if(!reels[dets.target.id].ismuted){
+      reels[dets.target.id].ismuted=true;
+    }
+    else{
+      reels[dets.target.id].ismuted=false;
+    }
+     addData();
+  } 
 })
-var allreels=document.querySelector('.all-reels');
-allreels.innerHTML=sum;
