@@ -105,9 +105,9 @@ section.allElems{
 .back:active{
     scale:0.97;
 }
-.todo-list-fullpage{
+/* .todo-list-fullpage{
     display: block;
-}
+} */
 .todo-list-fullpage h2{
     font-size: 55px;
 }
@@ -188,7 +188,7 @@ section.allElems{
 }
 .task{
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items:center;
     justify-content: space-between;
     width: 100%;
@@ -200,6 +200,23 @@ section.allElems{
 .task h5{
     color:var(--sec);
     font-size: 30px;
+    display: flex;
+
+    align-items: flex-start;
+    gap: 5px;
+}
+.task h5 span{
+    background-color:var(--red);
+    color: var(--pri);
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 11px;
+}
+.task h5 span.true{
+    opacity:1;
+}
+.task h5 span.false{
+    opacity:0;
 }
 .task button{
     padding: 15px 30px;
@@ -209,6 +226,9 @@ section.allElems{
     border-radius: 5px;
     border: none;
     font-weight: 600;
+}
+.task button:active{
+    scale:0.96;
 }
 .mark-imp{
     display: flex;
@@ -221,8 +241,52 @@ section.allElems{
     gap: 30px;
 }
 .mark-imp input{
-   scale: 2;
+   scale: 1.7;
 }
 .mark-imp label{
     font-size: 20px;
 }
+
+.daily-planner-fullpage{
+    display: block;
+}
+.daily-planner-fullpage h2{
+    font-size:70px;
+}
+.daily-planner-fullpage .day-planner{
+    background-color: var(--tri2);
+    height: 85%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap:wrap;
+    overflow: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.daily-planner-fullpage .day-planner .day-planner-time{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 49%;
+    margin-bottom: 15px;
+}
+ .day-planner .day-planner-time input{
+    padding: 20px 45px;
+    padding-top: 34px;
+    width: 100%;
+    outline: none;
+    background-color: var(--sec);
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+ }
+  .day-planner .day-planner-time p{
+    position: absolute;
+    top:12%;
+    left:2% ;
+    font-size: 18px;
+  }
