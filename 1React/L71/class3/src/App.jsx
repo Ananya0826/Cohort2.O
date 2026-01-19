@@ -1,13 +1,16 @@
 import React from 'react'
-import Card from './components/Card'
 const App = () => {
+  const age=21;
+  const arr=[10,20,30];
+  const user="Ananya"
   return (
-    <div className='p-3 h-screen bg-black'>
-      <Card user='ananya' age={30}/>
-      <Card user='aadarsh' age={34}/>
+    <div>
+      {arr.map(function(elem){
+        return <h1>{elem} is king</h1>
+      })
+      }
     </div>
   )
 }
 export default App
-//map:transforms and returns new array
-//filter:filters values and returns them
+// map,filter,reduce->higher order function
