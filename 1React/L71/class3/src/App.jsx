@@ -1,16 +1,13 @@
 import React from 'react'
+import Navbar from './components/Navbar'
 const App = () => {
-  const age=21;
-  const arr=[10,20,30];
-  const user="Ananya"
   return (
     <div>
-      {arr.map(function(elem){
-        return <h1>{elem} is king</h1>
-      })
-      }
+      <Navbar title='Sheryians' color="red" links={["Home","About","Account","Contact"]}/>
+      <Navbar title='Bixi' color="blue" links={["Home","Services","Courses","Contact","Videos"]}/>
+      <Navbar title='Hehahahaha' color="green" links={["Home","Product","Men","Women"]}/>
     </div>
   )
 }
+
 export default App
-// map,filter,reduce->higher order function
