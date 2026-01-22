@@ -6,6 +6,7 @@ const App = () => {
       <Navbar title='Sheryians' color="red" links={["Home","About","Account","Contact"]}/>
       <Navbar title='Bixi' color="blue" links={["Home","Services","Courses","Contact","Videos"]}/>
       <Navbar title='Hehahahaha' color="green" links={["Home","Product","Men","Women"]}/>
+      <Navbar title='Hehah' color="pink" links={["Home","Product","Men","Women"]}/>
     </div>
   )
 }
