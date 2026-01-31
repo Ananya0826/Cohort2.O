@@ -74,3 +74,14 @@ const App = () => {
 }
 
 export default App
+
+// localStorage.clear()
+// to clear local storage data
+// key value inputs in setItem
+// localStorage.setItem('user','ananya')
+// key for getItem
+// var user=localStorage.getItem()
+
+// localStorage.removeItem('user')
+// JSON.stringify:array/Object->string
+// json.parse:string->array/Object
