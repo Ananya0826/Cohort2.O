@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import User from './assets/components/User';
+const App = () => {
+  const [allData, setAllData] = useState([]);
+  const getData = async () => {
+    console.log("data aa gaya guys");
+    const response = await axios.get('https://jsonplaceholder.typicode.com/users')
+    console.log(response.data);
+    setAllData(response.data)
+  }
+  useEffect(function(){
+    getData()
+  },[])
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <div className='all-cards'>
+        {allData.map(function (elem, idx) {
+          console.log(elem);
+          return <div key={idx}><User elem={elem}/></div>
+        })}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
 export default App
+/*
+CSR:client side rendering
+SSR:server side rendering
+CSR:loads backend data to frontend data in the form of json,slower but good for SEO optimization.
+SSR:faster than CSR.
+promise is of three stages:accept,pending,response
+*/
