@@ -11,3 +11,9 @@ const App = () => {
 }
 
 export default App
+/*
+react router dom cotains 2 things-
+reactrouter-contains logic
+and 
+reactrouter dom-history,url,interacts with dom
+*/
