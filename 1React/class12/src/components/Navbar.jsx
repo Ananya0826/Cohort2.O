@@ -5,17 +5,25 @@ const Navbar = () => {
     <div className='nav'>
       <NavLink 
       to='/'
-      
+      className={({isActive})=>({
+        color:isActive?'active':'non-active'
+      })}
       >
         Home
         </NavLink>
       <NavLink 
       to='/about'
+      className={({isActive})=>({
+        color:isActive?'active':'non-active'
+      })}
       >
         About
         </NavLink>
       <NavLink 
       to='/courses'
+      className={({isActive})=>({
+        color:isActive?'active':'non-active'
+      })}
       >
         Courses
         </NavLink>

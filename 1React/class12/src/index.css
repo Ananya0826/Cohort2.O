@@ -8,12 +8,24 @@ html,body{
     height: 100%;
     width: 100%;
     background-color:black ;
+    color: white;
 }
 h1{
     font-size:70px;
     font-weight: 600;
     position: absolute;
     top:50vh;
+    left:50vw;
+    transform: translate(-50%,-50%);
+    text-decoration: underline;
+    color: white;
+    white-space: nowrap;
+}
+h2{
+    font-size:70px;
+    font-weight: 600;
+    position: absolute;
+    top:30vh;
     left:50vw;
     transform: translate(-50%,-50%);
     text-decoration: underline;
@@ -28,4 +40,45 @@ h1{
 .nav a{
     text-decoration: none;
     color: white;
+}
+.active{
+    color: red;
+    border-bottom:2px solid red;
+}
+.non-active{
+    color: white;
+    border-bottom:2px solid white;
+}
+.sale{
+    background-color: rgb(112, 7, 51);
+    display: flex;
+    flex-wrap: nowrap;
+    color:white;
+    gap:20px;
+}
+.sale p{
+    flex-shrink:0 ;
+}
+.allCourses{
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    font-size: 10vh;
+}
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(42,42,42);
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
+.footer button{
+    border:none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: lightseagreen;
 }
