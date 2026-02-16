@@ -13,6 +13,7 @@ const App = () => {
   return (
     <div>
       <Navbar/>
+      content
       <AllSections courseData={courseData}/>
       <Footer/>
     </div>
