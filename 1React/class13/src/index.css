@@ -9,3 +9,7 @@ html,body{
   background-color: black;
   color: white;
 }
+.nav{
+  padding: 20px;
+  background-color: cadetblue;
+}
