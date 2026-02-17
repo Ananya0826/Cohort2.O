@@ -14,6 +14,7 @@ const App = () => {
     <div>
       <Navbar/>
       content
+      yesh
       <AllSections courseData={courseData}/>
       <Footer/>
     </div>
