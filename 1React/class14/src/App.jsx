@@ -5,9 +5,10 @@ import Sections from './components/Sections'
 
 const App = () => {
   return (
-    <div>
+    <div className='app-div'>
       <Navbar/>
-      <Sections/>
+      <Sections><h1>
+        Hello</h1></Sections>
       <Footer/>
     </div>
   )
