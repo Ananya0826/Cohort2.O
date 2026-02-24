@@ -23,7 +23,6 @@ const App = () => {
     </div>
   )
 }
-
 export default App
 /*
 CSR:client side rendering

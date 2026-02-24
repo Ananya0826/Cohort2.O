@@ -1,14 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+
 const App = () => {
+  function btnClicked(){
+    console.log('Button is Clicked!!!');
+  }
   return (
     <div>
-      <Navbar title='Sheryians' color="red" links={["Home","About","Account","Contact"]}/>
-      <Navbar title='Bixi' color="blue" links={["Home","Services","Courses","Contact","Videos"]}/>
-      <Navbar title='Hehahahaha' color="green" links={["Home","Product","Men","Women"]}/>
-      <Navbar title='Hehah' color="pink" links={["Home","Product","Men","Women"]}/>
+      <button onClick={function(){
+        btnClicked()
+      }}
+       className='active:scale-95 bg-emerald-600 text-white rounded font-bold m-2 p-4'>Click to Download</button>
     </div>
   )
 }
-
 export default App
