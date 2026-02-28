@@ -18,10 +18,9 @@ const App = () => {
   return (
     <div>
       {productData.map(function(elem){
-        return <h1>{elem.data}</h1> 
+        return <div><a href="">product</a></div>
       })}
     </div>
   )
 }
-//done 
 export default App
