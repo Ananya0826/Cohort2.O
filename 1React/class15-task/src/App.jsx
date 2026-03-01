@@ -5,20 +5,21 @@ const App = () => {
   const getData=async()=>{
     const response=await axios.get('https://fakestoreapi.com/products')
     setProductData(response.data);
-    console.log(response.data,"hehehehehehehehehehehe");
   }
-  const getFirstData=async(id)=>{
-    const response=await axios.get(`https://fakestoreapi.com/products/${id}`)
-    console.log(response.data);
-  }
+
   useEffect(function(){
     getData()
     console.log('hello');
   },[])
   return (
-    <div>
-      {productData.map(function(elem){
-        return <div><a href="">product</a></div>
+    <div className='allProducts'>
+      {productData.map(function(elem,idx){
+        return <a target='_blank' className='product' key={idx}href="">
+        <div>
+          <img src={elem.image} alt="" />
+          <h2>{elem.title}</h2>
+        </div>
+        </a>
       })}
     </div>
   )

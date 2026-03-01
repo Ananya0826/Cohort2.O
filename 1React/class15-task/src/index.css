@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.allProducts{
+    display: flex;
+    flex-wrap:wrap;
+    gap:20px;
+    background-color: black;
+}
+.product{
+    display: block;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(39, 36, 36);
+    border-radius: 10px;
+    text-decoration: none;
+}
+.product img{
+    height: 200px;
+    
+}
+.product h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
