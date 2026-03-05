@@ -8,7 +8,7 @@ const Home = () => {
       <h1>This is home page</h1>
       <button className='cta' onClick={()=>{
         navigate('/product')
-      }}>Explore Courses</button>
+      }}>Explore All Products</button>
       <h1></h1>
     </div>
   )
