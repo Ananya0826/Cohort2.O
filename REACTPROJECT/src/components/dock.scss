@@ -1,14 +1,14 @@
 .dock{
     display: flex;
-    gap: 0.75rem;
+    gap: 0.4rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.3rem;
     left:50%;
     transform: translate(-50%);
     background-color: rgba(63, 63, 63, 0.395);
-    padding-inline: 1rem;
-    padding-block: 0.75rem;
-    border-radius: 0.75rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.45rem;
+    border-radius: 0.45rem;
     backdrop-filter: blur;
     .icon{
         padding: 0.65rem;
@@ -16,8 +16,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 2.85rem;
+        height: 2.85rem;
         aspect-ratio: 1/1;
-        width: 3.75rem;
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
     }
     .github,.cli{

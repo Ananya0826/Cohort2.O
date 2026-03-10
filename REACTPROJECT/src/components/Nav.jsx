@@ -3,7 +3,7 @@ import "./nav.scss"
 import DateTime from './DateTime'
 const Nav = () => {
   return (
-    <div className='nav'>
+    <div className='main-nav'>
         <div className="left">
             <div className="apple-icon">
                 <img src="./navbar-icons/apple.svg" alt="" />
