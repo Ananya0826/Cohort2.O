@@ -10,6 +10,7 @@ const App = () => {
       <Dock/>
       <MACWindow>
         <h2>hello</h2>
+        h1
       </MACWindow>
     </main>
   )
