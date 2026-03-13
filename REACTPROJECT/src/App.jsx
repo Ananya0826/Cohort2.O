@@ -9,8 +9,8 @@ const App = () => {
       <Nav/>
       <Dock/>
       <MACWindow>
-        <h2>hello</h2>
-        h1
+        <h2>hello world</h2>
+        
       </MACWindow>
     </main>
   )
