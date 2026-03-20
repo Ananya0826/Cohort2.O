@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1773847521422-77ff84e29353?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Smart Agriculture Platform",
+    "description": "An AI-powered platform that helps farmers analyze soil health, plan crops, and optimize fertilizer usage.",
+    "tags": ["AI", "Agriculture", "React", "Node.js"],
+    "repoLink": "https://github.com/user/smart-agriculture",
+    "demoLink": "https://smart-agriculture-demo.vercel.app"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1772775133324-131c0f747b80?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Women Safety App",
+    "description": "A mobile app providing SOS alerts, live location tracking, and AI-based safety guidance for women.",
+    "tags": ["Safety", "Mobile App", "AI", "Maps API"],
+    "repoLink": "https://github.com/user/women-safety-app",
+    "demoLink": "https://women-safety-demo.netlify.app"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1773751392391-91e2b0324ced?q=80&w=711&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Career Guidance System",
+    "description": "A platform that analyzes resumes, predicts placements, and provides personalized career recommendations.",
+    "tags": ["NLP", "Machine Learning", "Web App"],
+    "repoLink": "https://github.com/user/career-guidance",
+    "demoLink": "https://career-guidance-demo.vercel.app"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1773844876662-6b6901484879?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Food Ordering Website",
+    "description": "A responsive web application for browsing menus, placing orders, and tracking food delivery.",
+    "tags": ["HTML", "CSS", "JavaScript", "E-commerce"],
+    "repoLink": "https://github.com/user/food-ordering",
+    "demoLink": "https://food-ordering-demo.netlify.app"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1772440428276-79f044085e53?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Local Business Finder",
+    "description": "An app that helps users discover nearby businesses with reviews, ratings, and navigation support.",
+    "tags": ["React", "Maps", "Local Services"],
+    "repoLink": "https://github.com/user/local-business-finder",
+    "demoLink": null
+  }
+]
